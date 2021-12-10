@@ -1,0 +1,245 @@
+/* style.css */
+
+body {
+    background-color: oldlace;
+}
+
+#myNavbar {
+    float: right;
+}
+
+
+/*animation for name starts*/
+
+#name {
+    animation: mymove 5s infinite;
+    color: crimson;
+}
+
+@keyframes mymove {
+    50% {
+        font: 40px bold;
+    }
+}
+
+
+/* animation ends here */
+
+
+/* image starts */
+
+.image {
+    width: 100%;
+    height: 50%;
+    margin-top: 1px;
+    z-index: -999;
+}
+
+.intro {
+    padding: 15% 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*image ends */
+
+
+/* about me starts here */
+
+.cvdown {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px 60px;
+    width: 250px;
+    height: 50px;
+}
+
+.cvdown:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: grey;
+}
+
+.resumedown {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px 30px;
+    width: 250px;
+    height: 50px;
+}
+
+.resumedown:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul li a {
+    color: black;
+}
+
+
+/* about me ends here */
+
+.content {
+    color: white;
+    font-family: "Roboto Slab", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.8em;
+    text-align: center;
+    background-color: transparent;
+}
+
+.row {
+    margin: 4% auto 2% auto;
+}
+
+.column2 {
+    padding: 0px 3px 10px 3px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 800px;
+    background-color: crimson;
+}
+
+
+/* project section starts */
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all ease 0.2s;
+}
+
+.heading {
+    color: white;
+}
+
+.badge {
+    margin-left: auto;
+}
+
+.badge span {
+    background-color: black;
+    width: 60px;
+    height: 25px;
+    padding: 4px;
+    margin: 0% 1px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.html {
+    color: #FF6D00;
+}
+
+.css {
+    color: #039BE5;
+}
+
+.js {
+    color: #FFD600;
+}
+
+.bootstrap {
+    color: #7D11F8;
+}
+
+.python {
+    background-image: linear-gradient(to right, #3778AD, #FFD343);
+    color: black;
+}
+
+.java {
+    background-image: linear-gradient(#EC2025 15%, #0D8AC7 60%);
+    color: black;
+}
+
+.c {
+    color: #5D6CBF;
+}
+
+.cplusplus {
+    color: #007AFF;
+}
+
+
+/* project section ends */
+
+
+/* footer css starts here */
+
+.foot {
+    margin-top: 20px;
+    padding: 25px 0;
+    background-color: #13161F;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.bottom {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    color: #fff;
+}
+
+.text a:hover {
+    text-decoration: none;
+}
+
+
+/* footer css ends here */
+
+
+/*my projects section starts here*/
+
+.card {
+    background-color: #13161F;
+    color: oldlace;
+}
+
+.card-link {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: grey;
+    color: #111;
+}
+
+
+/*my projects section ends here */
