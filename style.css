@@ -1,0 +1,688 @@
+/* Styling for website */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* style for scrollbar starts here */
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 800px;
+    background-color: red;
+}
+
+
+/* style for scrollbar ends here */
+
+
+/* style for header page starts here */
+
+#header {
+    width: 100%;
+    height: 115vh;
+    background-image: url(images/profile2.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.container {
+    padding: 2px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 110px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    margin-left: 30%;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: red;
+}
+
+.buttons {
+    display: inline;
+}
+
+#resume {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(251, 56, 56);
+    border: 2px solid rgb(251, 56, 56);
+    transition: .5s;
+}
+
+#resume:hover {
+    background: red;
+    border: 2px solid red;
+    transition: .5s;
+}
+
+
+/* style for header page ends here */
+
+
+/*css for about section starts here*/
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 30%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.about-col-2 p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+
+.tab-links.active-link::after {
+    width: 60%;
+}
+
+.tab-contents ul li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: rgb(251, 56, 56);
+    font-size: 16px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/*css for about section ends here*/
+
+
+/*css for scores section starts here*/
+
+#scores {
+    padding: 30px 0;
+}
+
+.scores-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.scores-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.scores-list div h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.scores-list div h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(251, 56, 56)
+}
+
+.scores-list div p {
+    font-size: 18px;
+}
+
+.scores-list div p b {
+    color: rgb(251, 56, 56);
+}
+
+.scores-list div p a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.scores-list div:hover {
+    background: rgb(251, 56, 56);
+    transform: translate(-10px);
+}
+
+.scores-list div:hover h2 {
+    color: #fff;
+    transition: .5s;
+}
+
+.scores-list div:hover p b {
+    color: #fff;
+    transition: .5s;
+}
+
+
+/* css for scores section ends here*/
+
+
+/*css for skills section starts here*/
+
+#skills {
+    padding: 30px 0;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.skills-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.skills-list div h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.skills-list div:hover {
+    background: rgb(251, 56, 56);
+    transform: translate(-10px);
+    cursor: pointer;
+}
+
+
+/* css for skills section ends here*/
+
+
+/* css for education starts here*/
+
+#edu {
+    padding: 30px 0;
+}
+
+.edu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+@property --progress-value {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+}
+
+@-webkit-keyframes html-progress {
+    to {
+        --progress-value: 76;
+    }
+}
+
+@keyframes html-progress {
+    to {
+        --progress-value: 76;
+    }
+}
+
+@-webkit-keyframes css-progress {
+    to {
+        --progress-value: 93;
+    }
+}
+
+@keyframes css-progress {
+    to {
+        --progress-value: 93;
+    }
+}
+
+@-webkit-keyframes js-progress {
+    to {
+        --progress-value: 92;
+    }
+}
+
+@keyframes js-progress {
+    to {
+        --progress-value: 92;
+    }
+}
+
+.progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) "%";
+}
+
+.html {
+    background: radial-gradient(closest-side, black 79%, transparent 80% 100%), conic-gradient(rgb(251, 56, 56) calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: html-progress 2s 1 forwards;
+    animation: html-progress 2s 1 forwards;
+}
+
+.html::before {
+    -webkit-animation: html-progress 2s 1 forwards;
+    animation: html-progress 2s 1 forwards;
+}
+
+.css {
+    background: radial-gradient(closest-side, black 79%, transparent 80% 100%, white 0), conic-gradient(rgb(251, 56, 56) calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: css-progress 2s 1 forwards;
+    animation: css-progress 2s 1 forwards;
+}
+
+.css::before {
+    -webkit-animation: css-progress 2s 1 forwards;
+    animation: css-progress 2s 1 forwards;
+}
+
+.js {
+    background: radial-gradient(closest-side, black 79%, transparent 80% 100%, white 0), conic-gradient(rgb(251, 56, 56) calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: js-progress 2s 1 forwards;
+    animation: js-progress 2s 1 forwards;
+}
+
+.js::before {
+    -webkit-animation: js-progress 2s 1 forwards;
+    animation: js-progress 2s 1 forwards;
+}
+
+progress {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+
+/* css for skills ends here*/
+
+
+/* css for projects starts here*/
+
+#projects {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.layer:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgb(251, 56, 56));
+    transition: transform 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: rgb(251, 56, 56);
+}
+
+.layer:hover h3 {
+    color: white;
+}
+
+.layer a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+/* css for projects ends here*/
+
+
+/* connect me style starts here */
+
+.content {
+    color: white;
+    font-family: "Roboto Slab", Sans-serif;
+    font-weight: 600;
+    line-height: 1.8em;
+    text-align: center;
+    background-color: transparent;
+}
+
+.column2 {
+    padding: 0px 10px 50px 3px;
+    display: inline-block;
+}
+
+.subheading {
+    padding: 30px 0;
+}
+
+
+/* connect me style ends here */
+
+
+/*css for responsive nature starts here */
+
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width:1230px) {
+    .header-text {
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .header-text {
+        font-size: 14px;
+        margin-left: 30%;
+    }
+    .header-text h1 {
+        font-size: 24px;
+        margin-left: 30%;
+    }
+    .header-text p {
+        margin-left: 30%;
+    }
+    .header-text .buttons {
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .buttons #resume {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .logo {
+        width: 80px;
+        height: 60px;
+    }
+    .buttons #resume {
+        font-size: 18px;
+    }
+    #header {
+        background-image: url(images/profile2_mobile.png);
+    }
+    .header-text {
+        margin-top: 75%;
+        margin-left: 50px;
+        font-size: 16px;
+    }
+    .header-text p {
+        color: #262626;
+    }
+    .header-text h1 {
+        font-size: 30px;
+        color: #262626
+    }
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul {
+        background: rgb(251, 56, 56);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 50px;
+        text-align: center;
+        z-index: 2;
+        transition: .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+        margin-top: 50px;
+    }
+    nav ul li a::after {
+        background: white;
+    }
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .skills-list h1 {
+        text-align: center;
+    }
+    .layer h3 {
+        font-size: 32px;
+    }
+    .layer p {
+        font-size: 18px;
+    }
+}
+
+
+/*css for responsive nature ends here */
+
+
+/* footer css starts here */
+
+.foot {
+    margin-top: 20px;
+    padding: 25px 0;
+    background-color: #262626;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.bottom {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    color: #fff;
+}
+
+.text a {
+    color: rgb(251, 56, 56);
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: none;
+}
+
+
+/* footer css ends here */
